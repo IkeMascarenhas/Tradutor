@@ -1,6 +1,5 @@
-type InputProps = {
-    setFromLang:React.Dispatch<React.SetStateAction<string>>
+type InputTypes = {
     langOptions:Map<string, string>,
   }
 
-  export default InputProps
+  export default InputTypes
