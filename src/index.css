@@ -1,3 +1,42 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+
+}
+
+body, #root, article{
+    width: 100vw;
+    height: 90vh;
+    overflow-x: hidden;
+}
+
+@media(min-width:480px){
+    body, #root, article{
+        overflow: hidden;
+    }
+
+    .layoutGridArea{
+        grid-template-areas: 
+        "cardFrom cardTarget"
+        "buttonTranslate buttonTranslate"
+        ;
+    }
+
+    .buttonTranslate{
+        grid-area:buttonTranslate;
+    }
+
+    .cardFrom{
+        grid-area:cardFrom;
+    }
+
+    .cardTarget{
+        grid-area:cardTarget;
+    }
+}

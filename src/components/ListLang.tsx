@@ -5,9 +5,9 @@ type ListLangProps ={
 
 const ListLang = ({langOptions}:ListLangProps) => {
   return (
-    <datalist id="fromLang">
+    <datalist id="fromLang" className="dropdown">
         {Array.from(langOptions).map(([el, code])=>(
-          <option value={el} key={code}>{el}</option>
+          <option value={el} key={code} className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">{el}</option>
         ))}
       </datalist>
   )
