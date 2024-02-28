@@ -12,31 +12,48 @@
 
 body, #root, article{
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     overflow-x: hidden;
 }
 
-@media(min-width:480px){
+.layoutGridArea{
+    grid-template-areas: 
+    "cardFrom cardTarget"
+    "buttonTranslate buttonTranslate"
+    ;
+}
+
+.buttonTranslate{
+    grid-area:buttonTranslate;
+}
+
+.cardFrom{
+    grid-area:cardFrom;
+}
+
+.cardTarget{
+    grid-area:cardTarget;
+}
+
+@media(min-width:640px){
     body, #root, article{
         overflow: hidden;
     }
-
-    .layoutGridArea{
-        grid-template-areas: 
-        "cardFrom cardTarget"
-        "buttonTranslate buttonTranslate"
-        ;
+    button{
+        width: 100% !important;
     }
 
-    .buttonTranslate{
-        grid-area:buttonTranslate;
+}
+
+@media(max-width:640px){
+    .card{
+        margin-bottom: 1rem;
     }
 
-    .cardFrom{
-        grid-area:cardFrom;
+    button{
+        width: 100% !important;
     }
-
-    .cardTarget{
-        grid-area:cardTarget;
+    body, #root, article{
+        overflow: hidden;
     }
 }
