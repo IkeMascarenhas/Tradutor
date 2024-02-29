@@ -36,7 +36,7 @@ const Translator = () => {
           setTranslated("")
           setError(false)
           setIsLoading(true)
-          const response = await fetch(`https://ap.mymemory.translated.net/get?q=${text}&langpair=${langOptions.get(fromLang)}|${langOptions.get(targetLang)}`)
+          const response = await fetch(`https://api.mymemory.translated.net/get?q=${text}&langpair=${langOptions.get(fromLang)}|${langOptions.get(targetLang)}`)
           const result = await response.json()
           setIsLoading(false)
           setTranslated(result.responseData.translatedText)
