@@ -1,6 +1,5 @@
 import FromLang from "./FromLang"
 import InputTypes from "../../types/InputTypes"
-import microphone from "../../assets/icons/microphone.svg"
 
 type InputProps = InputTypes & {
   text:string,

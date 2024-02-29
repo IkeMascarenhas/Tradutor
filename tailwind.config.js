@@ -10,6 +10,6 @@ export default {
   plugins: [require("daisyui")],
 
   daisyui: {
-    themes: ["dark", "synthwave"],
+    themes: ["winter", "synthwave",],
   },
 }

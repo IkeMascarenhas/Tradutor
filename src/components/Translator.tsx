@@ -4,32 +4,17 @@ import Output from './Output/Output';
 
 
 const langOptions = new Map([
-    ['Árabe', 'AR'],
-    ['Búlgaro', 'BG'],
-    ['Tcheco', 'CS'],
-    ['Dinamarquês', 'DA'],
     ['Alemão', 'DE'],
-    ['Grego', 'EL'],
     ['Inglês', 'EN'],
     ['Espanhol', 'ES'],
-    ['Estoniano', 'ET'],
-    ['Finlandês', 'FI'],
     ['Francês', 'FR'],
-    ['Húngaro', 'HU'],
-    ['Indonésio', 'ID'],
     ['Italiano', 'IT'],
     ['Japonês', 'JA'],
     ['Coreano', 'KO'],
-    ['Lituano', 'LT'],
-    ['Letão', 'LV'],
-    ['Norueguês (Bokmål)', 'NB'],
     ['Holandês', 'NL'],
     ['Polonês', 'PL'],
     ['Português', 'PT-BR'],
-    ['Romeno', 'RO'],
     ['Russo', 'RU'],
-    ['Eslovaco', 'SK'],
-    ['Esloveno', 'SL'],
     ['Sueco', 'SV'],
     ['Turco', 'TR'],
     ['Ucraniano', 'UK'],
@@ -86,7 +71,7 @@ const Translator = () => {
 </div>
   }
     <article className='flex flex-col items-center sm:justify-center my-16 sm:my-0'>
-    <main className='md:grid md:grid-cols-2 md:grid-rows-2 layoutGridArea gap-x-5 sm:flex sm:flex-wrap sm:flex-col sm:justify-center '>
+    <main className='md:grid md:grid-cols-2 md:grid-rows-2 layoutGridArea gap-x-5 sm:flex sm:flex-wrap sm:flex-col sm:justify-center'>
         <Input setFromLang={SetFromLang} langOptions={langOptions} text={text} setText={setText} className="w-2"/>
         <Output translated={translated} targetLang={targetLang} setTargetLang={setTargetLang} langOptions={langOptions} loading={isLoading}/>
         <button onClick={handleTranslation} className='buttonTranslate justify-self-center btn btn-outline btn-primary btn-success sm:m-auto'>Traduzir</button>
