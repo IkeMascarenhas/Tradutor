@@ -17,12 +17,12 @@ const Input = ({setFromLang, langOptions, text, setText}:InputProps) => {
       <textarea name="from" 
       id="from" 
       required 
-      placeholder="Digite o texto" 
+      placeholder="Digite o texto:" 
       maxLength={2000} 
       minLength={2} 
       value={text} 
       onChange={(el)=> setText(el.target.value)} 
-      className="textarea textarea-ghost h-32 textarea-accent"/>
+      className="textarea textarea-ghost h-32 textarea-accent text-base"/>
     </section>
   )
 }

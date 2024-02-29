@@ -16,12 +16,12 @@ const Output = ({translated, setTargetLang, langOptions, loading}:OutputProps) =
       <textarea name="target" 
       id="target" 
       required 
-      placeholder={loading ? "Aguarde" : "O resultado aparecerá aqui"} 
+      placeholder={loading ? "Aguarde" : "Resultado:"} 
       maxLength={2000} 
       minLength={2} 
       value={loading ? "Aguarde um momento" : translated} 
       readOnly
-      className="textarea textarea-ghost h-32 textarea-accent"/>
+      className="textarea textarea-ghost h-32 textarea-accent text-base"/>
     </section>
   )
 }
