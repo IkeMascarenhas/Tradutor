@@ -1,14 +1,12 @@
 ## Sumário
 
 - [Visão geral](#overview)
-  - [O desafio](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
   - [Tecnologias utilizadas](#built-with)
-  - [O que eu aprendi](#what-i-learned)
 
 
-## Overview
+## Visão Geral
 
 ### O desafio
 
@@ -27,7 +25,7 @@ Usuários devem poder:
 - Deploy: [Tradutor](tradutor-lyart.vercel.app)
 
 
-### Construído com
+### Teecnologias utilizadas
 
 - React
 - Typescript
